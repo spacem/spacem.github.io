@@ -31,21 +31,21 @@
         <p>Home page for my github account: <a href="https://github.com/spacem">https://github.com/spacem</a></p>
 
 <p>
-  I am relearning web development with a new technology stack.
-  To do this I started development of a simulator for one of my favourite online games Dragon Nest.
+  Here are some of the projects I work on in my spare time.
 </p>
 
 <h2>
 <a id="dngearsim" class="anchor" href="#dngearsim" aria-hidden="true"><span class="octicon octicon-link"></span></a>dngearsim</h2>
 
 <blockquote>
-<p>View details of equipment from the game Dragon Nest.
-Check out the simulator here:
-<a href="https://spacem.github.io/dngearsim">http://spacem.github.io/dngearsim</a></p>
+<p>An equipment simulator for the game Dragon Nest.
+<br>
+<a href="https://spacem.github.io/dngearsim">https://spacem.github.io/dngearsim</a></p>
 
 <p>
-  This is my first angular app.
-  I wrote this from scratch over many months. My goal has been for it to be multi-region, single page and mobile friendly.
+  This is my first angular app. I wrote this from scratch and learnt a lot along the way.
+  My goal has been for it to be multi-region, single page and mobile friendly and easy to update.
+  I use a firebase back end where I both store user builds and deploy the latest game data to.
 </p>
 
 </blockquote>
@@ -54,13 +54,22 @@ Check out the simulator here:
 <a id="dnskillsim" class="anchor" href="#dnskillsim" aria-hidden="true"><span class="octicon octicon-link"></span></a>dnskillsim</h2>
 
 <blockquote>
-<p>View and create skill builds from the game Dragon Nest.
-Check out the simulator here:
-<a href="https://dnskillsim.herokuapp.com">https://dnskillsim.herokuapp.com</a></p>
+<p>A skill simulator for the game Dragon Nest.
+<br>
+<a href="https://spacem.github.io/dnskillsim">https://spacem.github.io/dnskillsim</a></p>
 
 <p>
-  This is a fork of another simulator that I have quickly hacked to get working with the latest game data.
-  I plan to enhance parts of this application to align with my goals from dngearsim. ie. multi-region, single page, and mobile friendly.
+  This is a fork of a popular skill simulator for the game Dragon Nest.
+  I quickly hacked it to support the latest game changes.
+  I also made some changes so that it would work with multiple regions.
+  Due to some node.js express specific code the application needs a server to run.
+</p>
+<p>
+  I have split the application into three parts and I deploy now in three places.
+  As per the gear sim all game data is now deployed to firebase separating updates of content to the app.
+  The part of the sim where you make your build is mostly original code and runs on/from heroku.
+  For the other part of the sim runs on github pages for example selecting character, choosing region and publishing builds.
+  This new functionality is mostly copied code from dngearsim.
 </p>
 
 </blockquote>
@@ -72,7 +81,6 @@ Check out the simulator here:
 <a href="http://spacem.github.io/dntviewer">http://spacem.github.io/dntviewer</a></p>
 
 <p>For the viewer I developed a library dntreader.js that loads dnt files and I reuse in this simulator.
-dntviewer is written using bootstrap with some jquery and a few third party libraries thrown in for grid and zip file support.
 </p>
 </blockquote>
 
