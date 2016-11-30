@@ -44,8 +44,8 @@
 
 <p>
   This is my first angular app. I wrote this from scratch and learnt a lot along the way.
-  My goal has been for it to be multi-region, single page and mobile friendly and easy to update.
-  I use a firebase back end where I both store user builds and deploy the latest game data to.
+  My goal has been for it to be multi-region, single page, mobile friendly and easy to update.
+  I store user builds and deploy latest game data to a firebase back end.
 </p>
 
 </blockquote>
@@ -65,11 +65,11 @@
   Due to some node.js express specific code the application needs a server to run.
 </p>
 <p>
-  I have split the application into three parts and I deploy now in three places.
+  I split the application into three parts and I deploy now in three places.
   As per the gear sim all game data is now deployed to firebase separating updates of content to the app.
   The part of the sim where you make your build is mostly someone elses code and runs on/from heroku.
   The other parts of the sim just sit on github pages for example selecting character, choosing region and publishing builds.
-  This new functionality is mostly copied code from dngearsim which also supports these features.
+  This new functionality is mostly copied from dngearsim which also supports these features.
 </p>
 
 </blockquote>
@@ -83,7 +83,20 @@
 <p>For the viewer I developed a library dntreader.js that loads dnt files and I reuse in this simulator.
 </p>
 </blockquote>
+<h2>
+<a id="dntpreprocess" class="anchor" href="#dntpreprocess" aria-hidden="true"><span class="octicon octicon-link"></span></a>dntpreprocess</h2>
 
+<blockquote>
+<p>I created this separate repository for maintaining scripts used to extract and optimise game data.
+<a href="http://spacem.github.io/dntpreprocess">http://spacem.github.io/dntpreprocess</a></p>
+
+<p>From the start I wanted the deployment to be a simple process.
+I found it nessessary to optimise the data file formats.
+Also I created some extra index files that are useful for datamining.
+The scripts have grown a lot but deployment of updates remains a single step process.
+</p>
+</blockquote>
+        
 <p>All of these application are GPL licensed so feel free to download, modify or extend.</p>
 <p>
   I provide links to hosted files that were extracted from the game that are used by the simulator.
