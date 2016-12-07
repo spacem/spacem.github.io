@@ -19,8 +19,8 @@ function(saveHelper,exportLinkHelper) {
     }
     this.setupBuilds();
     
-    this.getBuildLink = function() {
-      return exportLinkHelper.createGroupLink(vm.buildName, vm.build);
+    this.getBuildLink = function(build) {
+      return exportLinkHelper.createGroupLink(build.name, build.build);
     }
   
 }])
