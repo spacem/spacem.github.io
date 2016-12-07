@@ -20,7 +20,7 @@ function(saveHelper) {
     this.setupBuilds();
   
 }])
-.directive('dngearsimBuildItem', function() {
+.directive('dngearsimRecovery', function() {
   return {
     scope: {},
     controller: 'recoveryCtrl',
