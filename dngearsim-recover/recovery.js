@@ -1,7 +1,7 @@
 angular.module('dnsim').controller('recoveryCtrl',
 
-['saveHelper',
-function(saveHelper) {
+['saveHelper','exportLinkHelper',
+function(saveHelper,exportLinkHelper) {
   'use strict';
   
   var vm = this;
@@ -18,6 +18,10 @@ function(saveHelper) {
       }
     }
     this.setupBuilds();
+    
+    this.getBuildLink = function() {
+      return exportLinkHelper.createGroupLink(vm.buildName, vm.build);
+    }
   
 }])
 .directive('dngearsimRecovery', function() {

@@ -2,20 +2,20 @@
   <div class="col-xs-12 col-sm-8 col-lg-9">
   <div class="row">
     <div class="col-xs-12">
-      <button ng-click="ctrl.publish()" class="btn btn-link btn-block group-header-btn">
+      <a ng-href="publish" class="btn btn-link btn-block group-header-btn">
         <h3 class="text-left"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> publish<br />
         <small>log in and publish your builds online</small>
         </h3>
-      </button>
+      </a>
     </div>
   </div>
   <div id="saved-group" class="row" ng-if="::ctrl.builds" ng-repeat="b in ::ctrl.builds track by $index">
     
     <div class="col-xs-12 group-header">
-    <button class="btn btn-link btn-block group-header-btn" ng-click="ctrl.toggleGroup(b.name)">
+    <a class="btn btn-link btn-block group-header-btn" ng-href="https://spacem.github.io/dngearsim/{{ctrl.getBuildLink(b)}}">
       <dngearsim-build-summary build-name="::b.name" build="::b.build">
       </dngearsim-build-summary>
-    </button>
+    </a>
     </div>
     
   </div>
