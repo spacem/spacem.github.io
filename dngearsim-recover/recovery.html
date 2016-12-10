@@ -12,11 +12,12 @@
     </div>
   </div>
   <div id="saved-group" class="row" ng-if="::ctrl.builds" ng-repeat="b in ::ctrl.builds track by $index">
-    <div class="col-xs-11 group-header">
+    <div class="col-xs-1">
+      <br /><br />
       <button dngearsim-build-export-action class="btn btn-default" build="b.build" build-name="b.name">
       </button>
     </div>
-    <div class="col-xs-11 group-header">
+    <div class="col-xs-11">
       <span class="btn btn-link btn-block group-header-btn" dngearsim-export-action build-name="b.name" build="b.build">
         <dngearsim-build-summary build-name="::b.name" build="::b.build">
         </dngearsim-build-summary>
