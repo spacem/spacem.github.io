@@ -6,7 +6,7 @@
       <small>sorry but I had to change the site to https so you may need to reimport these builds</small>
       </h3>
       <p>
-         Click the builds you want to keep to export them to files.
+         Click the export button for builds you want to keep to export them to files.
          Then use <a href="https://spacem.github.io/dngearsim/import">the new import screen</a> to bring them in to the https version of the site.
       </p>
     </div>
@@ -14,11 +14,12 @@
   <div id="saved-group" class="row" ng-if="::ctrl.builds" ng-repeat="b in ::ctrl.builds track by $index">
     
     <div class="col-xs-12 group-header">
-    <button class="btn btn-link btn-block group-header-btn" dngearsim-export-action build-name="b.name" build="b.build">
+    <span class="btn btn-link btn-block group-header-btn" dngearsim-export-action build-name="b.name" build="b.build">
       <dngearsim-build-summary build-name="::b.name" build="::b.build">
       </dngearsim-build-summary>
+    </span>
+    <button dngearsim-build-export-action class="btn btn-default" build="b.build" build-name="b.name">
     </button>
-    </div>
     
   </div>
   </div>
